@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tanuja's Website</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playball&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .text-primary {
+            color: #fc98a1 !important;
+        }
+
+
+        .btn-primary {
+            color: #000;
+            background-color: #fc98a1;
+
+        }
+
+
+        .border-primary {
+            border-color: #fc98a1 !important;
+        }
+
+        body {
+            color: #0b0b0c;
+
+        }
+
+
+        .btn-primary:hover {
+            background-color: #282424 !important;
+            /* dark black */
+            color: #fc98a1 !important;
+            /* baby pink */
+        }
+
+        .skills {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 38px;
+            margin-bottom: 30px;
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .skill-card {
+            width: 220px;
+            padding: 20px;
+            border-radius: 10px;
+            background: #f8f9fa;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-card img {
+            width: 60px;
+            margin-bottom: 10px;
+        }
+
+        .skill-card h4 {
+            margin: 10px 0 5px;
+        }
+
+        .skill-card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .btn-primary,
+        .btn-primary:visited,
+        .btn-primary:active,
+        .btn-primary:focus {
+            background-color: #fc98a1 !important;
+            color: #000 !important;
+            border-color: #fc98a1 !important;
+        }
+
+        /* Remove focus shadow */
+        .btn-primary:focus,
+        .btn-primary:active:focus {
+            box-shadow: none !important;
+        }
+
+        /* Hover effect (keep your design) */
+        .btn-primary:hover {
+            background-color: #282424 !important;
+            color: #fc98a1 !important;
+        }
+
+        .wow {
+  visibility: visible !important;
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar start -->
+    <div class="container-fluid nav-bar">
+        <div class="container">
+            <nav class="navbar navbar-light navbar-expand-lg py-4">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-primary fw-bold mb-0">Tanu<span class="text-dark">ja</span> </h1>
+                </a>
+                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="achievements.html" class="nav-item nav-link ">Achievements</a>
+                        <a href="projects.html" class="nav-item nav-link active">Projects</a>
+
+
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Gallery</a>
+                            <div class="dropdown-menu bg-light">
+                                <a href="family.html" class="dropdown-item">Family</a>
+                                <a href="friends.html" class="dropdown-item">Friends</a>
+
+                            </div>
+                        </div>
+
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+
+                    <a href="contact.html"
+                        class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Contact Now</a>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control bg-transparent p-3" placeholder="keywords"
+                            aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-light py-6 my-6 mt-0">
+        <div class="container text-center animated bounceInDown">
+            <h1 class="display-1 mb-4">Projects <img src="img/flower 2.png"></h1>
+            <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item text-dark" aria-current="page">Projects</li>
+            </ol>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <div>
+        <h1 style="text-align: center; background-color :pink; margin-left:80px; margin-right:80px;">
+            BCA Project
+        </h1>
+    </div><br><br>
+
+    <div class="container-fluid py-6" style="padding-top: 2rem; padding-bottom: 2rem;">
+        <div class="container">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
+                    <img src="img/fabrication.png" class="img-fluid rounded" alt="" style="margin-top: 0px;"><br><br>
+
+                </div>
+                <div class="col-lg-7 wow bounceInUp" data-wow-delay="0.3s" style="margin-top: 0px;"><br>
+                    <h1 class="display-5 mb-4" style="margin-left: 50px;"> Online Fabrication Shopping Website</h1>
+                    <p class="mb-4" style="line-height: 1.7;margin-left: 50px;">In my BCA, I completed a Fabrication
+                        Website project as a solo.
+                        This website allows users to browse and shop various fabrication products, with the added
+                        functionality to add items to a cart for easy purchasing.
+                        I designed and developed a fully functional, user-friendly platform using HTML, CSS, JavaScript,
+                        Bootstrap, and PHP to ensure a responsive and interactive
+                        experience.<br><br> Handling all aspects of the project independently helped me improve my web
+                        development skills and gain practical
+                        experience in building an e-commerce style website tailored to fabrication services.</p>
+                    <br>
+
+                    <div class="row g-4 text-dark mb-5" style="margin-left: 50px;">
+                        <div class="col-sm-6">
+                            <i class="fas fa-share text-primary me-2"></i>Users can shop fabrication items online.
+                        </div>
+                        <div class="col-sm-6">
+                            <i class="fas fa-share text-primary me-2"></i>Solo Project Development.
+                        </div>
+                        <div class="col-sm-6">
+                            <i class="fas fa-share text-primary me-2"></i>Shopping & Cart Functionality.
+                        </div>
+                        <div class="col-sm-6">
+                            <i class="fas fa-share text-primary me-2"></i> provided user-friendly layout,
+                            opportunities
+                        </div>
+
+                        <a href="img/documentation.pdf"
+                            class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft"
+                            target="_blank" rel="noopener noreferrer"
+                            style="width: auto;margin-left: 40px;">Documentation</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About End -->
+
+
+    <section class="skills">
+        <h1 class="section-title">Frontend Technologies Used</h1>
+
+        <br><br>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="img/html.png" alt="HTML">
+                <h4>HTML</h4><br>
+                <p style="line-height: 1.7;">HTML is used to create the basic structure of the website, including pages,
+                    forms, and content
+                    layout.</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="img/css-3.png" alt="CSS">
+                <h4>CSS</h4><br>
+                <p>CSS is used to style the website, add colors, fonts, and make the layout responsive.</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="img/java-script.png" alt="JavaScript">
+                <h4>JavaScript</h4><br>
+                <p style="line-height: 1.7;">JavaScript is used to add interactivity such as sliders, form validation,
+                    and dynamic content
+                    updates.</p>
+            </div>
+            <div class="skill-card">
+                <img src="img/bootstrap.png" alt="JavaScript">
+                <h4>Bootsrap</h4><br>
+                <p style="line-height: 1.7;">Bootstrap is used to create responsive and mobile-friendly layouts quickly
+                    using ready-made
+                    components.</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="img/php.png" alt="JavaScript">
+                <h4>PHP</h4><br>
+                <p style="line-height: 1.7;">PHP is used for server-side processing, handling forms, and connecting the
+                    website to a database.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="skills">
+        <h1 class="section-title">Backend Technologies Used</h1>
+    </section>
+
+    <div class="container-fluid py-6" style="padding-top:0rem ;padding-bottom: 2rem;">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
+                    <img src="img/sql.png" class="img-fluid rounded" alt="">
+                </div>
+                <div class="col-lg-7 wow bounceInUp" data-wow-delay="0.3s">
+                    <small
+                        class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Backend</small>
+                    <h1 class="display-5 mb-4">SQL(structured query language)</h1>
+                    <p class="mb-4" style="line-height: 1.7;">In the fabrication website , SQL serves as the central
+                        backend
+                        database technology responsible<br> for managing and organizing all website data efficiently.
+                        It stores comprehensive product information such as names, categories, prices, descriptions, and
+                        availability, ensuring users always see accurate and up-to-date content. SQL also manages
+                        user-related data
+                        including registration details, login credentials, and session-based cart information, providing
+                        a secure and
+                        smooth shopping experience. <br><br>Cart operations are handled dynamically, allowing real-time
+                        updates when products
+                        are added or modified. Additionally, SQL supports order management by maintaining detailed
+                        records of orders,
+                        quantities, and transaction details, which helps in tracking purchases and streamlining backend
+                        operations.
+                        Overall, SQL plays a vital role in integrating front-end interfaces with server-side
+                        functionality, making
+                        the fabrication shopping website fully functional, dynamic, and data-driven.</p>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid py-6" style="padding-top: 0rem;">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.1s">
+                    <section class="skills">
+                        <h1 class="section-title">Frontend Design</h1>
+                    </section>
+                    <img src="img/fb.png" class="img-fluid rounded" alt="" style="border:2px solid black">
+                </div>
+
+                <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.3s">
+                    <section class="skills">
+                        <h1>Backend Design</h1>
+                    </section>
+                    <img src="img/fb2.png" class="img-fluid rounded" alt="" style="border:2px solid black">
+                </div>
+                <center>
+                    <a href="img/documentation.pdf"
+                        class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft"
+                        target="_blank" rel="noopener noreferrer" style="width: auto;">All Documentation</a>
+                </center>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h1 class="text-primary">Tanu<span class="text-dark">ja</span></h1>
+                        <p class="lh-lg mb-4" style="line-height: 1.7;">This is my personal website where I share my
+                            achievements, certificates,
+                            skills, and projects. It reflects my learning journey, academic progress, and passion for
+                            continuous improvement.</p>
+                        <div class="footer-icon d-flex">
+                            <a href="https://github.com/tanuja-student/tanuja-Student"
+                                class="btn btn-primary btn-sm-square me-2 rounded-circle"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/tanuja-khandare-78061a322/"
+                                class="btn btn-primary btn-sm-square rounded-circle"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Skills Including</h4>
+                        <div class="d-flex flex-column align-items-start">
+                            <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>C
+                                Language</a>
+                            <a class="text-body mb-3" href=""><i
+                                    class="fa fa-check text-primary me-2"></i>HTM,CSS,Javascript</a>
+                            <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Bootstap
+                                Framwork</a>
+                            <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>PHP</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Contact Me</h4>
+                        <div class="d-flex flex-column align-items-start">
+                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Nharu Chauk Talandage (Kolhapur)
+                            </p>
+                            <p><i class="fa fa-phone-alt text-primary me-2"></i> 8669549455</p>
+                            <p><i class="fas fa-envelope text-primary me-2"></i> tanujakhandare50@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="mb-4">My Linkdin Profile</h4>
+
+                        <img src="img/linkdin QR 2.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-dark py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0" style="text-align: center;">
+
+                    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Welcome to
+                            Tanuja's website</a> Designed by Tanuja</span>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

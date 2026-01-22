@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tanuja's Website</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playball&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .text-primary {
+            color: #fc98a1 !important;
+        }
+
+
+        .btn-primary {
+            color: #000;
+            background-color: #fc98a1;
+
+        }
+
+
+        .border-primary {
+            border-color: #fc98a1 !important;
+        }
+
+        body {
+            color: #0b0b0c;
+
+        }
+        
+        .btn-primary:hover {
+            background-color: #282424 !important;
+            /* dark black */
+            color: #fc98a1 !important;
+            /* baby pink */
+        }
+
+        .bg-primary {
+            background-color: #fffcf8 !important;
+        }
+
+
+        .py-6 {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+
+        }
+        .wow {
+  visibility: visible !important;
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar start -->
+    <div class="container-fluid nav-bar">
+        <div class="container">
+            <nav class="navbar navbar-light navbar-expand-lg py-4">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-primary fw-bold mb-0">Tanu<span class="text-dark">ja</span> </h1>
+                </a>
+                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="achievements.html" class="nav-item nav-link ">Achievements</a>
+                        <a href="projects.html" class="nav-item nav-link">Projects</a>
+
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Gallery</a>
+                            <div class="dropdown-menu bg-light">
+                                <a href="family.html" class="dropdown-item">Family</a>
+                                <a href="friends.html" class="dropdown-item">Friends</a>
+                                
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                  
+                    <a href="contact.html" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Contact Now</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+               
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control bg-transparent p-3" placeholder="keywords"
+                            aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-light py-6 my-6 mt-0">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-7 col-md-12">
+                    <small
+                        class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-4 animated bounceInDown">Welcome
+                        to my website</small>
+                    <h1 class="display-1 mb-4 animated bounceInDown">welcome to <span class="text-primary">Tanuja's
+                        </span>website</h1>
+                    <a href="about.html"
+                        class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft">About
+                        Me</a>
+                    <img src="img/flower.png">
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <img src="img/tanu 1.jpg" class="img-fluid rounded animated zoomIn" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- About Satrt -->
+    <div class="container-fluid py-6">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
+                    <img src="img/tanu 2.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="col-lg-7 wow bounceInUp" data-wow-delay="0.3s">
+                    <small
+                        class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">About
+                        Me</small>
+                    <h1 class="display-5 mb-4">I am Tanuja Khandare</h1>
+                    <p class="mb-4" style="line-height: 1.9;">My name is Tanuja Khandare,I am From Talandage (kolhapur),
+                        I have completed my bachelors of computer application (BCA) degree from Shivaji University
+                        kolhapur in april 2025. and I currently completing my master of computer appliacation (MCA) from
+                        DYP University Talasande . I Am belongs to nuclear family. My strength are I am self motivated
+                        hard working and discipline person. My short term goal is to get a job in reputed company and my
+                        long term goal is to achieve a good position in Company.
+                    </p>
+
+                    <p  style="line-height: 1.9;">
+                        I am dedicated and hardworking student, I always try to learn new things and improve my skill.I
+                        am fouced on my goals and work with confidance.I believe in growth,consistancy,and positive
+                        attitudde.
+                    </p>
+
+
+                </div>
+                <div class="col-lg-8 content">
+
+                    <div class="row">
+                        <div class="col-lg-6" style="margin-top:0px;line-height: 1.9;">
+                            <ul>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>10 August
+                                        2004</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong>
+                                    <span>https://tanuja-student.github.io/tanukhandare.github.io/</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>8669549455</span>
+                                </li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Talandage,
+                                        kolhapur</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6" style="margin-top:0px;line-height: 1.9;">
+                            <ul>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span>
+                                </li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong>
+                                    <span>tanujakhandare50@gmail.com</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>State:</strong> <span>Mahatashtra</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <br><br> <br><br>
+        <div>
+            <h3 style="background-color: #fc98a1; text-align: center; padding: 10px;">
+                My Skills
+            </h3>
+        </div>
+
+
+
+
+
+        <!-- About End -->
+
+
+        <!-- Fact Start-->
+        <div class="container-fluid faqt py-6">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-7">
+                        <div class="row g-4">
+                            <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.3s">
+                                <div class="faqt-item bg-primary rounded p-4 text-center">
+                                    <img src="img/html.png"><br><br><br>
+                                    <h3>HTML</h3>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.5s">
+                                <div class="faqt-item bg-primary rounded p-4 text-center">
+                                    <img src="img/css-3.png"><br><br><br>
+                                    <h3>CSS</h3>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.7s">
+                                <div class="faqt-item bg-primary rounded p-4 text-center">
+                                    <img src="img/java-script.png"><br><br><br>
+                                    <h3>JAVASCRIPT</h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.7s">
+                        <div class="faqt-item bg-primary rounded p-4 text-center">
+                            <img src="img/bootstrap.png"><br><br><br>
+                            <h3>BOOTSTRAP</h3>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <!-- Service Start -->
+        <div class="container-fluid service py-6" style="margin-top: 100px;">
+            <div class="container">
+                <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                    <small
+                        class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">My
+                        hobbies</small>
+                    <h1 class="display-5 mb-5">Hobbies & Interests</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <img src="img/pc.png"><br><br>
+                                    <h4 class="mb-3">Creating new website</h4>
+                                    <p class="mb-4" style="line-height: 1.7;">Creating new websites is one of my key interests. I enjoy designing
+                                        and developing websites using HTML, CSS, and basic JavaScript. Working on
+                                        websites helps me improve my creativity, problem-solving skills.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <img src="img/creative-thinking.png"><br><br>
+                                    <h4 class="mb-3">Learning new things</h4>
+                                    <p class="mb-4" style="line-height: 1.7;">Learning new things is one of my favorite habits. I enjoy exploring
+                                        new technologies, improving my skills, and gaining knowledge that helps me grow
+                                        personally and professionally. </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <img src="img/travel.png"><br><br>
+                                    <h4 class="mb-3">Visiting new places</h4>
+                                    <p class="mb-4" style="line-height: 1.7;">Visiting new places is one of my favorite hobbies. It allows me to
+                                        explore different cultures, meet new people, and experience new environments.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.7s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <img src="img/color-palette.png"><br><br>
+                                    <h4 class="mb-3">Drawing</h4>
+                                    <p class="mb-4" style="line-height: 1.7;">Drawing is one of my creative hobbies. It helps me express my ideas,
+                                        improve concentration, and relax my mind. I enjoy sketching different designs
+                                        and practicing drawing in my free time.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <img src="img/paper-crafts.png"><br><br>
+                                    <h4 class="mb-3">Crafting</h4>
+                                    <p class="mb-4" style="line-height: 1.7;">Crafting is one of my creative hobbies. I enjoy making handmade
+                                        items using paper, colors, and other materials. Crafting helps me improve my
+                                        creativity, patience, and attention to detail.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <img src="img/music.png"><br><br>
+                                    <h4 class="mb-3">Music listening</h4>
+                                    <p class="mb-4" style="line-height: 1.7;">Listening to music is one of my favorite hobbies. It helps me relax,
+                                        reduce stress, and improve my focus. Music keeps me motivated and refreshed,
+                                        especially during learning or creative work.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <img src="img/swimming.png"><br><br>
+                                    <h4 class="mb-3">Swimming</h4>
+                                    <p class="mb-4" style="line-height: 1.7;">Swimming is one of my favorite physical activities. It helps me stay
+                                        fit, active, and refreshed. Swimming improves my concentration and overall
+                                        well-being while reducing stress.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.7s">
+                        <div class="bg-light rounded service-item">
+                            <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                <div class="service-content-icon text-center">
+                                    <img src="img/dish.png"><br><br>
+                                    <h4 class="mb-3">Making new recipes</h4>
+                                    <p class="mb-4" style="line-height: 1.7;">Making new recipes is one of my enjoyable hobbies. I like
+                                        experimenting with different ingredients and trying new dishes. Cooking helps me
+                                        improve creativity, patience, and time management.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+
+        <!-- Blog Start -->
+        <div class="container-fluid blog py-6"style="margin-top: 100px;">
+            <div class="container">
+                <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                    <small
+                        class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Achievements</small>
+                    <h1 class="display-5 mb-5">My Achievements</h1>
+                </div>
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="blog-item">
+                            <div class="overflow-hidden rounded">
+                                <img src="img/javascript certificate.jpeg" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="blog-content mx-4 d-flex rounded bg-light">
+                                <div class="text-dark bg-primary rounded-start">
+                                    <div class="h-100 p-3 d-flex flex-column justify-content-center text-center"
+                                        style="background-color: #fc98a1;">
+                                        <p class="fw-bold mb-0">30</p>
+                                        <p class="fw-bold mb-0">Jan</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="h5 lh-base my-auto h-100 p-3">IBM javaScript certificate</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.3s">
+                        <div class="blog-item">
+                            <div class="overflow-hidden rounded">
+                                <img src="img/Aws Nsdc certificate.jpeg" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="blog-content mx-4 d-flex rounded bg-light">
+                                <div class="text-dark bg-primary rounded-start">
+                                    <div class="h-100 p-3 d-flex flex-column justify-content-center text-center"
+                                        style="background-color: #fc98a1;">
+                                        <p class="fw-bold mb-0">11</p>
+                                        <p class="fw-bold mb-0">Dec</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="h5 lh-base my-auto h-100 p-3">Aws acadamy certificate</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.5s">
+                        <div class="blog-item">
+                            <div class="overflow-hidden rounded">
+                                <img src="img/Sql IBM Certificate.jpeg" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="blog-content mx-4 d-flex rounded bg-light">
+                                <div class="text-dark bg-primary rounded-start">
+                                    <div class="h-100 p-3 d-flex flex-column justify-content-center text-center"
+                                        style="background-color: #fc98a1;">
+                                        <p class="fw-bold mb-0">9 </p>
+                                        <p class="fw-bold mb-0">Dec</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="h5 lh-base my-auto h-100 p-3">IBM sql certificate</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+
+
+
+        <!-- Events Start -->
+        <div class="container-fluid event py-6" style="margin-top: 100px;">
+            <div class="container">
+                <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                    <small
+                        class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">my
+                        gallery</small>
+                    <h1 class="display-5 mb-5">Memories in Frames</h1>
+                </div>
+                <div class="tab-class text-center">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp"
+                        data-wow-delay="0.1s">
+                        <li class="nav-item p-2">
+                            <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill active"
+                                data-bs-toggle="pill" href="#tab-1">
+                                <span class="text-dark" style="width: 150px;">All Memories</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="d-flex py-2 mx-2 border border-primary bg-light rounded-pill"
+                                data-bs-toggle="pill" href="#tab-2">
+                                <span class="text-dark" style="width: 150px;">Family</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill"
+                                data-bs-toggle="pill" href="#tab-3">
+                                <span class="text-dark" style="width: 150px;">Friends</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill"
+                                data-bs-toggle="pill" href="#tab-4">
+                                <span class="text-dark" style="width: 150px;">Me</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill"
+                                data-bs-toggle="pill" href="#tab-5">
+                                <span class="text-dark" style="width: 150px;">Sibllings</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="img/family1.jpeg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+
+                                                    <a href="img/family1.jpeg" data-lightbox="event-1"
+                                                        class="my-auto"><i
+                                                            class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="img/family2.jpeg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+
+                                                    <a href="img/family2.jpeg" data-lightbox="event-2"
+                                                        class="my-auto"><i
+                                                            class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.5s">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="img/friend1.jpeg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+
+                                                    <a href="img/friend1.jpeg" data-lightbox="event-3"
+                                                        class="my-auto"><i
+                                                            class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="img/friend2.jpeg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+
+                                                    <a href="img/friend2.jpeg" data-lightbox="event-4"
+                                                        class="my-auto"><i
+                                                            class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="img/t2.jpeg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+
+                                                    <a href="img/t2.jpeg" data-lightbox="event-5" class="my-auto"><i
+                                                            class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="img/t1.jpeg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+
+                                                    <a href="img/t1.jpeg" data-lightbox="event-6" class="my-auto"><i
+                                                            class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.5s">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="img/sibling1.jpeg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+
+                                                    <a href="img/sibling1.jpeg" data-lightbox="event-7"
+                                                        class="my-auto"><i
+                                                            class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="img/sibling2.jpeg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+
+                                                    <a href="img/sibling2.jpeg" data-lightbox="event-17"
+                                                        class="my-auto"><i
+                                                            class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="img/family1.jpeg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Wedding</h4>
+                                                    <a href="img/01.jpg" data-lightbox="event-8" class="my-auto"><i
+                                                            class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="img/family2.jpeg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Wedding</h4>
+                                                    <a href="img/01.jpg" data-lightbox="event-9" class="my-auto"><i
+                                                            class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="img/friend1.jpeg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Corporate</h4>
+                                                    <a href="img/01.jpg" data-lightbox="event-10" class="my-auto"><i
+                                                            class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="img/friend2.jpeg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Corporate</h4>
+                                                    <a href="img/01.jpg" data-lightbox="event-11" class="my-auto"><i
+                                                            class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-4" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="img/t2.jpeg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Cocktail</h4>
+                                                    <a href="img/01.jpg" data-lightbox="event-12" class="my-auto"><i
+                                                            class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="img/t1.jpeg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Cocktail</h4>
+                                                    <a href="img/01.jpg" data-lightbox="event-13" class="my-auto"><i
+                                                            class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-5" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="img/sibling1.jpeg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Buffet</h4>
+                                                    <a href="img/01.jpg" data-lightbox="event-14" class="my-auto"><i
+                                                            class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3">
+                                            <div class="event-img position-relative">
+                                                <img class="img-fluid rounded w-100" src="img/sibling2.jpeg" alt="">
+                                                <div class="event-overlay d-flex flex-column p-4">
+                                                    <h4 class="me-auto">Buffet</h4>
+                                                    <a href="img/01.jpg" data-lightbox="event-15" class="my-auto"><i
+                                                            class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Events End -->
+
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp" data-wow-delay="0.1s">
+            <div class="container" style="margin-top: 80px;margin-bottom: 80px;">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h1 class="text-primary">Tanu<span class="text-dark">ja</span></h1>
+                            <p class="lh-lg mb-4">This is my personal website where I share my achievements,
+                                certificates, skills, and projects. It reflects my learning journey, academic progress,
+                                and passion for continuous improvement.</p>
+                            <div class="footer-icon d-flex">
+                                <a href="https://github.com/tanuja-student/tanuja-Student"
+                                    class="btn btn-primary btn-sm-square me-2 rounded-circle"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/tanuja-khandare-78061a322/"
+                                    class="btn btn-primary btn-sm-square rounded-circle"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">Skills Including</h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>C
+                                    Language</a>
+                                <a class="text-body mb-3" href=""><i
+                                        class="fa fa-check text-primary me-2"></i>HTM,CSS,Javascript</a>
+                                <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Bootstap
+                                    Framwork</a>
+                                <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>PHP</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">Contact Me</h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Nharu Chauk Talandage
+                                    (Kolhapur)</p>
+                                <p><i class="fa fa-phone-alt text-primary me-2"></i> 8669549455</p>
+                                <p><i class="fas fa-envelope text-primary me-2"></i> tanujakhandare50@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">My Linkdin Profile</h4>
+
+                            <img src="img/linkdin QR 2.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-dark py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0" style="text-align: center;">
+
+                    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Welcome to
+                            Tanuja's website</a> Designed by Tanuja</span>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
